@@ -15,8 +15,15 @@
  */
 public class Receipt2 {
     public static void main(String[] args) {
-
-        // Your code here
-
+        double shirtPrice = 6.99;
+        int shirtQuantity = 20;
+        double underwearPrice = 45.00;
+        int underwearQuantity = 30;
+        double flipflopsPrice = 200.00;
+        int flipflopsQuantity = 1;
+        
+        double totalBeforeTax = (shirtPrice*shirtQuantity) + (underwearPrice*underwearQuantity) + (flipflopsPrice*flipflopsQuantity);
+        double totalAfterTax = ((totalBeforeTax*.08875)+totalBeforeTax);
+        System.out.println("Total: $" + Math.round(totalAfterTax*100.0)/100.0);
     }
 }
