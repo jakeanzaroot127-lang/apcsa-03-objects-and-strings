@@ -14,7 +14,15 @@
  */
 public class CharMath {
     public static void main(String[] args) {
+        System.out.println((int) 'A');
+        System.out.println((int) 'a');
+        System.out.println((int) 'Z');
+        System.out.println((int) '0');
+        System.out.println((int) ' ');
 
+        System.out.println((char)(65));
+        System.out.println((char) ('M' + 1));
+        System.out.println((int) ('A' - 'a'));
         // Your code here
 
     }
